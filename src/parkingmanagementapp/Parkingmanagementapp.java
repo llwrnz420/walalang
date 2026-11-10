@@ -16,6 +16,20 @@ public class Parkingmanagementapp {
         this.head = null;
         this.size = 0;
     }
+    public int getSize() {
+        return size;
+    }
+
+    public VehicleNode getHead() {
+        return head;
+    }
+
+    // Insert new node at the end of the linked list
+    public void add(String plateNumber, String vehicleType, String ownerName, long entryTime) {
+        VehicleNode newNode = new VehicleNode(plateNumber, vehicleType, ownerName, entryTime);
+        if (head == null) {
+            head = newNode;
+        } else {
     /**
      * @param args the command line arguments
      */
