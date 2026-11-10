@@ -30,6 +30,15 @@ public class Parkingmanagementapp {
         if (head == null) {
             head = newNode;
         } else {
+            VehicleNode current = head;
+            while (current.next != null) {
+                current = current.next;
+            }
+            current.next = newNode;
+        }
+        size++;
+    }
+        }
     /**
      * @param args the command line arguments
      */
