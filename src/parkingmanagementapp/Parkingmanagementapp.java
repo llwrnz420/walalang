@@ -9,7 +9,13 @@ package parkingmanagementapp;
  * @author USER
  */
 public class Parkingmanagementapp {
+ private VehicleNode head;
+    private int size;
 
+    public CustomLinkedList() {
+        this.head = null;
+        this.size = 0;
+    }
     /**
      * @param args the command line arguments
      */
